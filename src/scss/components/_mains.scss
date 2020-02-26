@@ -1,10 +1,79 @@
 main{
+    height: 80vh;
     display: flex;
     flex-direction: column;
     max-width: 900px;
+    width: 100%;
     margin: 0 auto;
+    padding: 10px auto;
     align-items: center;
+    justify-content: center;
+    #video-title{
+        text-align: center;
+    }
+    #video{
+        width: 100%;
+        z-index: 2;
+    }
     #form{
         text-align: center;
+        #email{
+            height:  30px;
+            max-width: 250px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .myButton {
+            margin-top: 20px;
+            box-shadow: 0px 4px 0px 0px #8a2a21;
+            background-color:transparent;
+            border-radius:11px;
+            border:3px solid #d02718;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            padding:5px 37px;
+            text-decoration:none;
+            text-shadow:0px -3px 5px #810e05;
+        }
+        .myButton:hover {
+            background-color:transparent;
+        }
+        .myButton:active {
+            text-decoration: none;
+            position:relative;
+            top:1px;
+        }      
+                
+    }
+}
+
+@media screen and (max-width: 420px){
+    main{
+        height: 550px;
+        width: 90%;
+        #video-title{
+            font-size: 22px;
+        }
+        form{
+            #email{
+                margin-top: 10px;
+            }
+            .myButton{
+                padding:5px 18px !important;
+                font-size:14px !important;
+            }
+        }
+        
+
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 900px){
+    main{
+        width: 90%;
+        height: 650px;
     }
 }

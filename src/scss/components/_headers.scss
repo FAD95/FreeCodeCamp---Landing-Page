@@ -2,10 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  background-color: #593D3B ;
+  background-color: $font-color1 ;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  
   #header-img{
-      height: 100%;
+      max-height: 50px;
       margin-left: 10px;
   }
   #nav-bar {
@@ -13,9 +17,22 @@
       display: flex;
       justify-content: space-evenly;
       list-style: none;
+      text-align: center;
       li {
         margin-right: 2pc;
+        min-width: 100px;
+        a{
+            color: #333;
+        }
       }
     }
   }
+
+  
+}
+
+@media screen and (max-width: 780px ){
+    #header #nav-bar{
+        display: none;
+    }
 }

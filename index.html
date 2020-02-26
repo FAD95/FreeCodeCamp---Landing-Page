@@ -12,28 +12,34 @@
         <nav id="nav-bar">
             <ul>
                 <li><a class="nav-link" href="#video">Video</a></li>
-                <li><a class="nav-link" href="#form">Email</a></li>
+                <li><a class="nav-link" href="#email">Email</a></li>
                 <li><a class="nav-link" href="#footer">More about</a></li>
             </ul>
         </nav>
+        
     </header>
     <main>
-        <video class="mt-2" id="video" src="./src/media/My Chemical Romance-Teenagers.mp4" controls >
-            Tu navegador no implementa el elemento <code>video</code>.
-        </video>
-        <form class="mt-2" id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
-            <label for="email">Email: </label>
-            <input id="email" name="email" type="email" placeholder="Enter your email here" required><br>
-            <input class="mt-1" id="submit" name="submit" type="submit">
-        </form>
+        <h1 class="font-color1" id="video-title">My Chemical Romance - Teenagers</h1>
+        <p class="font-color1">Teenagers videoclip</p>
+        <div>
+            <video id="video" src="./src/media/My Chemical Romance-Teenagers.mp4" controls >
+                Tu navegador no implementa el elemento <code>video</code>.
+            </video>
+            <form class="mt-2" id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+                <label class="font-color1" for="email">Email: </label>
+                <input id="email" name="email" type="email" placeholder="Enter your email here" required><br>
+                <input class="myButton" id="submit" name="submit" type="submit">
+            </form>
+        </div>
+        
     </main>
     <footer id="footer">
         <ul>
             <li>
-                <span><img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt=""></span>
+                <a class="footer-links" href=""><img  src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt=""></a>
             </li>
             <li>
-                <span><img src="https://www.freepnglogos.com/uploads/instagram-logos-png-images-free-download-2.png" alt=""></span>
+                <a class="footer-links" href=""><img  src="https://www.freepnglogos.com/uploads/instagram-logos-png-images-free-download-2.png" alt=""></a>
             </li>
         </ul>
         <h3>FAD Pages</h3>

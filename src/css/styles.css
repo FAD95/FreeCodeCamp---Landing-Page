@@ -1,12 +1,20 @@
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"); }
+
+.font-color1 {
+  color: #EFEFEF; }
 
 .mt-1 {
   margin-top: 1pc; }
 
 .mt-2 {
   margin-top: 2pc; }
+
+a {
+  text-decoration: none; }
 
 #header {
   display: -webkit-box;
@@ -18,10 +26,13 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 50px;
-  background-color: #593D3B; }
+  background-color: #EFEFEF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
   #header #header-img {
-    height: 100%;
+    max-height: 50px;
     margin-left: 10px; }
   #header #nav-bar ul {
     display: -webkit-box;
@@ -30,11 +41,20 @@ body {
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
     #header #nav-bar ul li {
-      margin-right: 2pc; }
+      margin-right: 2pc;
+      min-width: 100px; }
+      #header #nav-bar ul li a {
+        color: #333; }
+
+@media screen and (max-width: 780px) {
+  #header #nav-bar {
+    display: none; } }
 
 main {
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,9 +63,98 @@ main {
   -ms-flex-direction: column;
   flex-direction: column;
   max-width: 900px;
+  width: 100%;
   margin: 0 auto;
+  padding: 10px auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  main #video-title {
+    text-align: center; }
+  main #video {
+    width: 100%;
+    z-index: 2; }
   main #form {
     text-align: center; }
+    main #form #email {
+      height: 30px;
+      max-width: 250px;
+      width: 100%;
+      border-radius: 10px; }
+    main #form .myButton {
+      margin-top: 20px;
+      -webkit-box-shadow: 0px 4px 0px 0px #8a2a21;
+      box-shadow: 0px 4px 0px 0px #8a2a21;
+      background-color: transparent;
+      border-radius: 11px;
+      border: 3px solid #d02718;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 20px;
+      padding: 5px 37px;
+      text-decoration: none;
+      text-shadow: 0px -3px 5px #810e05; }
+    main #form .myButton:hover {
+      background-color: transparent; }
+    main #form .myButton:active {
+      text-decoration: none;
+      position: relative;
+      top: 1px; }
+
+@media screen and (max-width: 420px) {
+  main {
+    height: 550px;
+    width: 90%; }
+    main #video-title {
+      font-size: 22px; }
+    main form #email {
+      margin-top: 10px; }
+    main form .myButton {
+      padding: 5px 18px !important;
+      font-size: 14px !important; } }
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+  main {
+    width: 90%;
+    height: 650px; } }
+
+#footer {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  color: #333;
+  background-color: #EFEFEF; }
+  #footer ul {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none; }
+    #footer ul li {
+      margin-left: 5px;
+      margin-right: 5px; }
+      #footer ul li .footer-links img {
+        max-width: 40px; }
+  #footer h3 {
+    margin: 5px auto; }
+
+@media screen and (min-height: 730px) and (orientation: portrait) {
+  #footer {
+    position: absolute;
+    bottom: 0; } }
+
+@media screen and (min-height: 730px) and (min-width: 830px) and (orientation: landscape) {
+  #footer {
+    position: absolute;
+    bottom: 0; } }

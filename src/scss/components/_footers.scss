@@ -1,0 +1,40 @@
+#footer {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  color: #333;
+  background-color: $font-color1;
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    li {
+      margin-left: 5px;
+      margin-right: 5px;
+      .footer-links img {
+        max-width: 40px;
+      }
+    }
+  }
+  h3 {
+    margin: 5px auto;
+  }
+}
+
+@media screen and(min-height:730px) and (orientation: portrait){
+    #footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media screen and(min-height:730px) and(min-width: 830px) and (orientation: landscape){
+    #footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
