@@ -21,3 +21,23 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 a{
     text-decoration: none;
 }
+
+ul{
+  list-style: none;
+}
+
+h1{
+  font-family: $font1;
+}
+p{
+  font-family: $font2;
+  font-size: 18px;
+}
+input{
+  font-family: $font2;
+  font-size: 18px;
+}
+label{
+  font-family: $font2;
+  font-size: 18px;
+}

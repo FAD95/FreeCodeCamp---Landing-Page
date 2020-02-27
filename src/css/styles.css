@@ -16,6 +16,24 @@ body {
 a {
   text-decoration: none; }
 
+ul {
+  list-style: none; }
+
+h1 {
+  font-family: "Trade Winds", "Times New Roman", Times, serif; }
+
+p {
+  font-family: "Odibee Sans", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 18px; }
+
+input {
+  font-family: "Odibee Sans", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 18px; }
+
+label {
+  font-family: "Odibee Sans", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 18px; }
+
 #header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,7 +48,12 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  font-family: "Trade Winds", "Times New Roman", Times, serif; }
+  #header .nav-link {
+    color: #333; }
+  #header #nav-bar-res {
+    display: none; }
   #header #header-img {
     max-height: 50px;
     margin-left: 10px; }
@@ -41,15 +64,43 @@ a {
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    list-style: none;
     text-align: center; }
     #header #nav-bar ul li {
       margin-right: 2pc;
       min-width: 100px; }
-      #header #nav-bar ul li a {
-        color: #333; }
 
 @media screen and (max-width: 780px) {
+  #header #nav-bar-res {
+    display: inline-block;
+    font-family: "Trade Winds", "Times New Roman", Times, serif; }
+    #header #nav-bar-res ul {
+      margin-right: 15px; }
+      #header #nav-bar-res ul li #hamburguer-icon {
+        max-width: 50px; }
+      #header #nav-bar-res ul li #hamburguer__menu-items {
+        position: absolute;
+        -webkit-transform: translate(-140px, 10px);
+        -ms-transform: translate(-140px, 10px);
+        transform: translate(-140px, 10px);
+        background-color: #EFEFEF;
+        padding: 0;
+        max-width: 200px;
+        width: 100%;
+        display: none; }
+        #header #nav-bar-res ul li #hamburguer__menu-items li {
+          height: 50px;
+          border: 0.5px solid #000;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+  #header #nav-bar-res:hover #hamburguer__menu-items {
+    display: block; }
   #header #nav-bar {
     display: none; } }
 
@@ -98,7 +149,8 @@ main {
       font-size: 20px;
       padding: 5px 37px;
       text-decoration: none;
-      text-shadow: 0px -3px 5px #810e05; }
+      text-shadow: 0px -3px 5px #810e05;
+      font-family: "Trade Winds", "Times New Roman", Times, serif; }
     main #form .myButton:hover {
       background-color: transparent; }
     main #form .myButton:active {
@@ -121,7 +173,8 @@ main {
 @media screen and (orientation: landscape) and (max-width: 900px) {
   main {
     width: 90%;
-    height: 650px; } }
+    height: 650px;
+    margin-top: 50px; } }
 
 #footer {
   display: -ms-grid;

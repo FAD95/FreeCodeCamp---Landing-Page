@@ -2,37 +2,75 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $font-color1 ;
+  background-color: $font-color1;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
-  
-  #header-img{
-      max-height: 50px;
-      margin-left: 10px;
+  font-family: $font1;
+
+  .nav-link{
+    color: #333;
+  }
+  #nav-bar-res {
+    display: none;
+  }
+
+  #header-img {
+    max-height: 50px;
+    margin-left: 10px;
   }
   #nav-bar {
     ul {
       display: flex;
       justify-content: space-evenly;
-      list-style: none;
       text-align: center;
       li {
         margin-right: 2pc;
         min-width: 100px;
-        a{
-            color: #333;
-        }
       }
     }
   }
-
-  
 }
 
-@media screen and (max-width: 780px ){
-    #header #nav-bar{
-        display: none;
+@media screen and (max-width: 780px) {
+  #header {
+    #nav-bar-res {
+      display: inline-block;
+      font-family: $font1;
+      ul {
+        margin-right: 15px;
+        li {
+          #hamburguer-icon {
+            max-width: 50px;
+          }
+          #hamburguer__menu-items {
+            position: absolute;
+            transform: translate(-140px, 10px);
+            
+            background-color: $font-color1;
+            padding: 0;
+            max-width: 200px;
+            width: 100%;
+            display: none;
+            li {
+              height: 50px;
+              border: 0.5px solid #000;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
     }
+    #nav-bar-res:hover {
+      #hamburguer__menu-items {
+        display: block;
+      }
+    }
+    #nav-bar {
+      display: none;
+    }
+  }
 }
