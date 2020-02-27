@@ -20,18 +20,10 @@ ul {
   list-style: none;
   padding: 0; }
 
-h1 {
+h1, h3, span {
   font-family: "Trade Winds", "Times New Roman", Times, serif; }
 
-p {
-  font-family: "Odibee Sans", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 18px; }
-
-input {
-  font-family: "Odibee Sans", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 18px; }
-
-label {
+p, label, input {
   font-family: "Odibee Sans", "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 18px; }
 

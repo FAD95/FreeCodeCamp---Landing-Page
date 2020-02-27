@@ -27,18 +27,11 @@ ul{
   padding: 0;
 }
 
-h1{
+h1, h3,span{
   font-family: $font1;
 }
-p{
-  font-family: $font2;
-  font-size: 18px;
-}
-input{
-  font-family: $font2;
-  font-size: 18px;
-}
-label{
+
+p, label, input{
   font-family: $font2;
   font-size: 18px;
 }
