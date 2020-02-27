@@ -53,7 +53,7 @@ main{
 
 @media screen and (max-width: 420px){
     main{
-        height: 550px;
+        height: 650px;
         width: 90%;
         #video-title{
             font-size: 22px;
@@ -74,7 +74,7 @@ main{
 @media screen and (orientation: landscape) and (max-width: 900px){
     main{
         width: 90%;
-        min-height: 700px;
-        
+        height: 650px;
+        margin-top: 70px;
     }
 }
