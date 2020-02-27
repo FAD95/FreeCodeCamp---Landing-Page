@@ -17,7 +17,8 @@ a {
   text-decoration: none; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
 
 h1 {
   font-family: "Trade Winds", "Times New Roman", Times, serif; }
@@ -49,7 +50,8 @@ label {
   top: 0;
   width: 100%;
   z-index: 1;
-  font-family: "Trade Winds", "Times New Roman", Times, serif; }
+  font-family: "Trade Winds", "Times New Roman", Times, serif;
+  height: 1005; }
   #header .nav-link {
     color: #333; }
   #header #nav-bar-res {
