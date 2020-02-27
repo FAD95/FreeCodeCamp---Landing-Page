@@ -42,11 +42,11 @@
         margin-right: 15px;
         li {
           #hamburguer-icon {
-            max-width: 50px;
+            max-width: 40px;
           }
           #hamburguer__menu-items {
             position: absolute;
-            transform: translate(-140px, 10px);
+            transform: translate(-150px, 10px);
             
             background-color: $font-color1;
             padding: 0;

@@ -76,12 +76,12 @@ label {
     #header #nav-bar-res ul {
       margin-right: 15px; }
       #header #nav-bar-res ul li #hamburguer-icon {
-        max-width: 50px; }
+        max-width: 40px; }
       #header #nav-bar-res ul li #hamburguer__menu-items {
         position: absolute;
-        -webkit-transform: translate(-140px, 10px);
-        -ms-transform: translate(-140px, 10px);
-        transform: translate(-140px, 10px);
+        -webkit-transform: translate(-150px, 10px);
+        -ms-transform: translate(-150px, 10px);
+        transform: translate(-150px, 10px);
         background-color: #EFEFEF;
         padding: 0;
         max-width: 200px;
@@ -174,7 +174,7 @@ main {
   main {
     width: 90%;
     height: 650px;
-    margin-top: 50px; } }
+    margin-top: 70px; } }
 
 #footer {
   display: -ms-grid;
